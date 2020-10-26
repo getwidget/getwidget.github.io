@@ -21,6 +21,12 @@
                     
         
         $(".mypanel").html(text);
+        
+        var dataObj = {};
+
+        dataObj.highScore = 100000;
+        dataObj.playerName = "Some Player";
+        localStorage.setItem("myKey", JSON.stringify(dataObj));
     });
     </script>
 </html>
