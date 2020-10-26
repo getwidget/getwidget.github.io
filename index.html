@@ -10,12 +10,13 @@
 </body>
     
     <script>
-    const json = '{"result":true, "count":42}';
-const obj = JSON.parse(json);
+    let json = require('./data.json');
+    //const json = '{"result":true, "count":42}';
+    const obj = JSON.parse(json);
 
-console.log(obj.count);
-// expected output: 42
+    console.log(obj.nome);
+    // expected output: 42
 
-console.log(obj.result);
+    console.log(obj.result);
     </script>
 </html>
