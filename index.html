@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="pt-br">
 
@@ -18,3 +19,37 @@
 <script src="runtime.acf0dec4155e77772545.js" defer></script><script src="polyfills.5c8033dfb7c3b4aa1601.js" defer></script><script src="main.294ef1f742f10f111cf2.js" defer></script></body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James dev</title>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="mypanel"></div>
+</body>
+    
+    <script>
+    var requestURL = 'https://jamerson1000.github.io/data.json';
+    $.getJSON(requestURL, function(data) {
+        
+        var text = `Date: ${data.id}<br>
+                    Time: ${data.nome}<br>
+                    Unix time: ${data.descricao}`
+                    
+        
+        $(".mypanel").html(text);
+        
+        var dataObj = {};
+
+        dataObj.highScore = 100000;
+        dataObj.playerName = "Some Player";
+        localStorage.setItem("myKey", JSON.stringify(dataObj));
+    });
+    </script>
+</html>
+>>>>>>> cb2d8a6b479dcd08d220f04de290d10e31de5ad6
