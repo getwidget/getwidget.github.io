@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James dev</title>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-    
+    <div class="mypanel"></div>
 </body>
     
     <script>
     var requestURL = 'https://jamerson1000.github.io/data.json';
-    console.log(requestURL);
-    
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
+    $.getJSON(requestURL, function(data) {
+        
+        var text = `Date: ${data.date}<br>
+                    Time: ${data.time}<br>
+                    Unix time: ${data.milliseconds_since_epoch}`
+                    
+        
+        $(".mypanel").html(text);
+    });
     </script>
 </html>
