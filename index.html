@@ -15,9 +15,9 @@
     var requestURL = 'https://jamerson1000.github.io/data.json';
     $.getJSON(requestURL, function(data) {
         
-        var text = `Date: ${data.date}<br>
-                    Time: ${data.time}<br>
-                    Unix time: ${data.milliseconds_since_epoch}`
+        var text = `Date: ${data.id}<br>
+                    Time: ${data.nome}<br>
+                    Unix time: ${data.descricao}`
                     
         
         $(".mypanel").html(text);
