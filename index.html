@@ -10,12 +10,7 @@
 </body>
     
     <script>
-    var fs=require('fs');
-    var data=fs.readFileSync('./data.json', 'utf8');
-    var words=JSON.parse(data);
-    var bodyparser=require('body-parser');
-    console.log(words);
-    var express=require('express');
-
+    var requestURL = 'https://jamerson1000.github.io/data.json';
+    console.log(requestURL);
     </script>
 </html>
