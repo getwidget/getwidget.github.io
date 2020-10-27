@@ -1,15 +1,7 @@
 [{
-    "imagem":"login.png",
-    "autor":"James Son",
-    "titulo":"Tela de login simples",
+    "imagem":"botao.png",
+    "autor":"Jamerson",
+    "titulo":"Botão simples",
     "data":"26/10/2020",
-    "codigo":"<p>void main() {</p><p>&emsp;runApp(MyApp());</p><p>}</p><br><p>class MyApp extends StatelessWidget {</p><p>// This widget is the root of your application.</p><p> @override</p><p>  Widget build(BuildContext context) {</p><p>    return MaterialApp(</p>"
-},
-{
-    "imagem":"login.png",
-    "autor":"James Son",
-    "titulo":"Tela de login simples2",
-    "data":"26/10/2020",
-    "codigo":"<p>void main() {</p><p>&emsp;runApp(MyApp());</p><p>}</p><br><p>class MyApp extends StatelessWidget {</p><p>// This widget is the root of your application.</p><p> @override</p><p>  Widget build(BuildContext context) {</p><p>    return MaterialApp(</p>"
-}
-]
+    "codigo":"<p>import 'package:flutter/material.dart';</p><p></p><p>class GWButton extends StatelessWidget {</p><p>  final width,</p><p>      height,</p><p>      child,</p><p>      backgroundColor,</p><p>      onPressed,</p><p>      loading,</p><p>      border,</p><p>      borderRadius,</p><p>      borderColor,</p><p>      borderWidth,</p><p>      borderStyle;</p><p></p><p>  const GWButton(</p><p>      {Key key,</p><p>      this.width,</p><p>      this.height,</p><p>      this.child,</p><p>      this.backgroundColor,</p><p>      this.onPressed,</p><p>      this.loading,</p><p>      this.border,</p><p>      this.borderRadius,</p><p>      this.borderColor,</p><p>      this.borderWidth,</p><p>      this.borderStyle})</p><p>      : super(key: key);</p><p></p><p>  @override</p><p>  Widget build(BuildContext context) {</p><p>    return Container(</p><p>      height: height,</p><p>      width: width,</p><p>      child: FlatButton(</p><p>        child: child,</p><p>        onPressed: onPressed,</p><p>        shape: RoundedRectangleBorder(</p><p>          borderRadius: borderRadius,</p><p>          side: BorderSide(</p><p>            color: borderColor,</p><p>            width: borderWidth,</p><p>            style: borderStyle,</p><p>          ),</p><p>        ),</p><p>      ),</p><p>    );</p><p>  }</p><p>}</p>"
+}]
